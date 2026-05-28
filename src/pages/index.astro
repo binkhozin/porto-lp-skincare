@@ -1,0 +1,484 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- ============================================ -->
+  <!-- NAVIGATION -->
+  <!-- ============================================ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-off-white/80 backdrop-blur-md border-b border-charcoal/5">
+    <div class="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="#" class="font-display text-2xl font-semibold tracking-tight text-charcoal">
+        GLOW
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#produk" class="text-sm text-charcoal-light hover:text-charcoal transition-colors duration-300">Produk</a>
+        <a href="#tentang" class="text-sm text-charcoal-light hover:text-charcoal transition-colors duration-300">Tentang</a>
+        <a href="#testimoni" class="text-sm text-charcoal-light hover:text-charcoal transition-colors duration-300">Testimoni</a>
+        <a
+          href="https://wa.me/6289678745851"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center px-5 py-2.5 bg-sage text-off-white text-sm font-medium rounded-full hover:bg-sage-dark transition-colors duration-300"
+        >
+          Pesan
+        </a>
+      </div>
+      <!-- Mobile hamburger -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden flex flex-col gap-1.5 p-2"
+        aria-label="Buka menu"
+        aria-expanded="false"
+      >
+        <span class="block w-5 h-0.5 bg-charcoal transition-all duration-300" id="bar1"></span>
+        <span class="block w-5 h-0.5 bg-charcoal transition-all duration-300" id="bar2"></span>
+        <span class="block w-3.5 h-0.5 bg-charcoal transition-all duration-300 ml-auto" id="bar3"></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-off-white border-t border-charcoal/5 px-6 py-6 space-y-4">
+      <a href="#produk" class="block text-base text-charcoal-light hover:text-charcoal transition-colors">Produk</a>
+      <a href="#tentang" class="block text-base text-charcoal-light hover:text-charcoal transition-colors">Tentang</a>
+      <a href="#testimoni" class="block text-base text-charcoal-light hover:text-charcoal transition-colors">Testimoni</a>
+      <a
+        href="https://wa.me/6289678745851"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-5 py-2.5 bg-sage text-off-white text-sm font-medium rounded-full hover:bg-sage-dark transition-colors duration-300 mt-2"
+      >
+        Pesan via WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- HERO - Asymmetric Split -->
+  <!-- ============================================ -->
+  <section class="min-h-[100dvh] flex items-center pt-24 pb-16 px-6">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <!-- Left: Copy -->
+      <div class="reveal">
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] text-charcoal max-w-xl">
+          Cantik Alami,<br />Bukan Instan
+        </h1>
+        <p class="mt-6 text-base md:text-lg text-charcoal-light leading-relaxed max-w-[50ch]">
+          Skincare bersih dari bahan alami Indonesia. Diformulasikan lembut, bebas bahan keras, untuk kulit yang sehat dari dalam.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href="https://wa.me/6289678745851"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-7 py-3.5 bg-sage text-off-white text-sm font-medium rounded-full hover:bg-sage-dark active:scale-[0.98] transition-all duration-300"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pesan via WhatsApp
+          </a>
+          <a
+            href="#produk"
+            class="inline-flex items-center px-7 py-3.5 border border-charcoal/15 text-charcoal text-sm font-medium rounded-full hover:border-charcoal/30 hover:bg-charcoal/5 active:scale-[0.98] transition-all duration-300"
+          >
+            Lihat Produk
+          </a>
+        </div>
+      </div>
+      <!-- Right: Hero image -->
+      <div class="reveal reveal-delay-2 relative flex justify-center lg:justify-end">
+        <div class="relative w-full max-w-md lg:max-w-lg">
+          <div class="absolute -inset-8 bg-sage-light/50 rounded-[2rem] -z-10"></div>
+          <img
+            src="https://picsum.photos/seed/glow-skincare-hero/600/750"
+            alt="Koleksi produk skincare GLOW"
+            class="w-full h-auto rounded-[1.25rem] object-cover aspect-[4/5]"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PRODUK - Bento Grid -->
+  <!-- ============================================ -->
+  <section id="produk" class="py-24 md:py-32 px-6">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section header -->
+      <div class="mb-16 max-w-xl reveal">
+        <p class="text-[11px] uppercase tracking-[0.18em] text-sage font-medium mb-3">Rangkaian Produk</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight text-charcoal">
+          Empat Langkah untuk Kulit Sehat
+        </h2>
+      </div>
+
+      <!-- Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+        <!-- Cleanser - spans 2 cols -->
+        <div class="md:col-span-2 bg-sage-light rounded-[1.25rem] overflow-hidden group reveal">
+          <div class="grid grid-cols-1 sm:grid-cols-2 h-full">
+            <div class="p-8 md:p-10 flex flex-col justify-center">
+              <p class="text-sm text-sage-dark font-medium mb-2">Cleanser</p>
+              <h3 class="font-display text-2xl md:text-3xl font-semibold text-charcoal tracking-tight">
+                Gentle Foam Cleanser
+              </h3>
+              <p class="mt-3 text-sm text-charcoal-light leading-relaxed max-w-[36ch]">
+                Pembersih lembut dengan ekstrak teh hijau. Membersihkan tanpa mengeringkan kulit.
+              </p>
+              <p class="mt-5 font-display text-xl font-semibold text-charcoal">Rp 89.000</p>
+            </div>
+            <div class="relative overflow-hidden">
+              <img
+                src="https://picsum.photos/seed/glow-cleanser/500/600"
+                alt="GLOW Gentle Foam Cleanser"
+                class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Toner - 1 col -->
+        <div class="bg-blush-light rounded-[1.25rem] overflow-hidden group reveal reveal-delay-1">
+          <div class="relative h-48 md:h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/seed/glow-toner/500/400"
+              alt="GLOW Hydrating Toner"
+              class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-7">
+            <p class="text-sm text-sage font-medium mb-2">Toner</p>
+            <h3 class="font-display text-xl font-semibold text-charcoal tracking-tight">
+              Hydrating Rose Toner
+            </h3>
+            <p class="mt-2 text-sm text-charcoal-light leading-relaxed">
+              Toner mawar yang menyeimbangkan pH kulit.
+            </p>
+            <p class="mt-4 font-display text-lg font-semibold text-charcoal">Rp 125.000</p>
+          </div>
+        </div>
+
+        <!-- Serum - 1 col -->
+        <div class="bg-off-white border border-charcoal/5 rounded-[1.25rem] overflow-hidden group reveal reveal-delay-1">
+          <div class="p-7">
+            <p class="text-sm text-sage font-medium mb-2">Serum</p>
+            <h3 class="font-display text-xl font-semibold text-charcoal tracking-tight">
+              Vitamin C Brightening Serum
+            </h3>
+            <p class="mt-2 text-sm text-charcoal-light leading-relaxed">
+              Serum pencerah dengan vitamin C stabil dari kakadu plum.
+            </p>
+            <p class="mt-4 font-display text-lg font-semibold text-charcoal">Rp 195.000</p>
+          </div>
+          <div class="relative h-48 md:h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/seed/glow-serum/500/400"
+              alt="GLOW Vitamin C Brightening Serum"
+              class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Moisturizer - spans 2 cols -->
+        <div class="md:col-span-2 bg-sage-light/60 rounded-[1.25rem] overflow-hidden group reveal reveal-delay-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 h-full">
+            <div class="relative overflow-hidden order-2 sm:order-1">
+              <img
+                src="https://picsum.photos/seed/glow-moisturizer/500/600"
+                alt="GLOW Daily Moisturizer"
+                class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-8 md:p-10 flex flex-col justify-center order-1 sm:order-2">
+              <p class="text-sm text-sage-dark font-medium mb-2">Moisturizer</p>
+              <h3 class="font-display text-2xl md:text-3xl font-semibold text-charcoal tracking-tight">
+                Daily Glow Moisturizer
+              </h3>
+              <p class="mt-3 text-sm text-charcoal-light leading-relaxed max-w-[36ch]">
+                Pelembap ringan dengan centella asiatica dan hyaluronic acid. Melembapkan seharian tanpa rasa berat.
+              </p>
+              <p class="mt-5 font-display text-xl font-semibold text-charcoal">Rp 165.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- TENTANG / BAHAN - Natural Ingredients -->
+  <!-- ============================================ -->
+  <section id="tentang" class="py-24 md:py-32 px-6 bg-sage-light">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight text-charcoal">
+          Bahan Alami dari Indonesia
+        </h2>
+        <p class="mt-4 text-base text-charcoal-light leading-relaxed">
+          Setiap produk GLOW menggunakan bahan botanis pilihan dari alam Indonesia. Aman, lembut, dan terbukti efektif.
+        </p>
+      </div>
+
+      <!-- Ingredients grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Ingredient 1 -->
+        <div class="bg-off-white rounded-[1.25rem] p-8 text-center reveal">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-sage/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-3.15 0-6 2.5-6 6 0 4.5 6 12 6 12s6-7.5 6-12c0-3.5-2.85-6-6-6z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m-3-3h6" />
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-charcoal mb-3">Centella Asiatica</h3>
+          <p class="text-sm text-charcoal-light leading-relaxed">
+            Pegagan dari Jawa, dikenal sebagai "tiger grass". Memperkuat skin barrier dan menenangkan kulit iritasi.
+          </p>
+        </div>
+
+        <!-- Ingredient 2 -->
+        <div class="bg-off-white rounded-[1.25rem] p-8 text-center reveal reveal-delay-1">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-blush/40 flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-3.15 0-6 2.5-6 6 0 4.5 6 12 6 12s6-7.5 6-12c0-3.5-2.85-6-6-6z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6" />
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-charcoal mb-3">Teh Hijau Jawa</h3>
+          <p class="text-sm text-charcoal-light leading-relaxed">
+            Kaya antioksidan dari kebun teh Puncak. Melindungi kulit dari radikal bebas dan polusi kota.
+          </p>
+        </div>
+
+        <!-- Ingredient 3 -->
+        <div class="bg-off-white rounded-[1.25rem] p-8 text-center reveal reveal-delay-2">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-sage/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-3.15 0-6 2.5-6 6 0 4.5 6 12 6 12s6-7.5 6-12c0-3.5-2.85-6-6-6z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m-3-3h6" />
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-charcoal mb-3">Minyak Kelapa Murni</h3>
+          <p class="text-sm text-charcoal-light leading-relaxed">
+            Virgin coconut oil dari Sulawesi. Melembapkan mendalam dan menjaga elastisitas kulit alami.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- TESTIMONI -->
+  <!-- ============================================ -->
+  <section id="testimoni" class="py-24 md:py-32 px-6">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section header -->
+      <div class="mb-16 max-w-xl reveal">
+        <p class="text-[11px] uppercase tracking-[0.18em] text-sage font-medium mb-3">Kata Mereka</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight text-charcoal">
+          Cerita dari Pengguna GLOW
+        </h2>
+      </div>
+
+      <!-- Testimonials - stacked full-width -->
+      <div class="space-y-6">
+        <!-- Testimonial 1 -->
+        <div class="bg-sage-light/40 rounded-[1.25rem] p-8 md:p-10 reveal">
+          <blockquote class="font-display text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl">
+            "Kulitku yang dulu gampang berminyak sekarang lebih seimbang. Toner mawarnya bikin wajah terasa segar setiap pagi."
+          </blockquote>
+          <div class="mt-6 flex items-center gap-4">
+            <img
+              src="https://picsum.photos/seed/glow-user-ratna/80/80"
+              alt="Ratna Sari"
+              class="w-10 h-10 rounded-full object-cover"
+              loading="lazy"
+            />
+            <div>
+              <p class="text-sm font-medium text-charcoal">Ratna Sari</p>
+              <p class="text-xs text-charcoal-light">Marketing, Jakarta Selatan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-blush-light/60 rounded-[1.25rem] p-8 reveal reveal-delay-1">
+            <blockquote class="font-display text-base md:text-lg text-charcoal leading-relaxed">
+              "Awalnya coba serum vitamin C-nya, sekarang sudah pakai satu rangkaian. Kulitku lebih cerah dan bekas jerawat memudar."
+            </blockquote>
+            <div class="mt-6 flex items-center gap-4">
+              <img
+                src="https://picsum.photos/seed/glow-user-dewi/80/80"
+                alt="Dewi Lestari"
+                class="w-10 h-10 rounded-full object-cover"
+                loading="lazy"
+              />
+              <div>
+                <p class="text-sm font-medium text-charcoal">Dewi Lestari</p>
+                <p class="text-xs text-charcoal-light">Desainer Grafis, Bandung</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-sage-light/40 rounded-[1.25rem] p-8 reveal reveal-delay-2">
+            <blockquote class="font-display text-base md:text-lg text-charcoal leading-relaxed">
+              "Moisturizernya ringan banget, cocok untuk iklim tropis. Kulit tetap lembap tanpa rasa lengket."
+            </blockquote>
+            <div class="mt-6 flex items-center gap-4">
+              <img
+                src="https://picsum.photos/seed/glow-user-salsa/80/80"
+                alt="Salsa Putri"
+                class="w-10 h-10 rounded-full object-cover"
+                loading="lazy"
+              />
+              <div>
+                <p class="text-sm font-medium text-charcoal">Salsa Putri</p>
+                <p class="text-xs text-charcoal-light">Mahasiswa, Surabaya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CTA - WhatsApp -->
+  <!-- ============================================ -->
+  <section class="py-24 md:py-32 px-6 bg-sage-light">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight text-charcoal">
+        Mulai Perjalanan Kulit Sehatmu
+      </h2>
+      <p class="mt-4 text-base text-charcoal-light leading-relaxed max-w-[45ch] mx-auto">
+        Konsultasi gratis dengan tim GLOW. Kami bantu pilih rangkaian yang tepat untuk jenis kulitmu.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="https://wa.me/6289678745851"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-sage text-off-white font-medium rounded-full hover:bg-sage-dark active:scale-[0.98] transition-all duration-300"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Konsultasi Gratis
+        </a>
+        <a
+          href="https://wa.me/6289678745851"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center px-8 py-4 border border-charcoal/15 text-charcoal font-medium rounded-full hover:border-charcoal/30 hover:bg-charcoal/5 active:scale-[0.98] transition-all duration-300"
+        >
+          Pesan Langsung
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="py-16 px-6 border-t border-charcoal/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
+        <!-- Brand -->
+        <div class="md:col-span-2">
+          <a href="#" class="font-display text-2xl font-semibold tracking-tight text-charcoal">
+            GLOW
+          </a>
+          <p class="mt-4 text-sm text-charcoal-light leading-relaxed max-w-[40ch]">
+            Skincare clean beauty dari Indonesia. Dibuat dengan bahan alami, tanpa bahan keras, untuk kulit sehat yang bercahaya.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="text-sm font-medium text-charcoal mb-4">Navigasi</h4>
+          <ul class="space-y-3">
+            <li><a href="#produk" class="text-sm text-charcoal-light hover:text-charcoal transition-colors">Produk</a></li>
+            <li><a href="#tentang" class="text-sm text-charcoal-light hover:text-charcoal transition-colors">Tentang Kami</a></li>
+            <li><a href="#testimoni" class="text-sm text-charcoal-light hover:text-charcoal transition-colors">Testimoni</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-sm font-medium text-charcoal mb-4">Hubungi Kami</h4>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="https://wa.me/6289678745851"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-sm text-charcoal-light hover:text-charcoal transition-colors"
+              >
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@binkhozin.com" class="text-sm text-charcoal-light hover:text-charcoal transition-colors">
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="mt-12 pt-8 border-t border-charcoal/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-charcoal-light">
+          &copy; 2026 GLOW. Semua hak dilindungi.
+        </p>
+        <p class="text-xs text-charcoal-light">
+          Dibuat dengan cinta di Indonesia
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<!-- Mobile menu script -->
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const bar1 = document.getElementById('bar1');
+  const bar2 = document.getElementById('bar2');
+  const bar3 = document.getElementById('bar3');
+  let isOpen = false;
+
+  menuBtn?.addEventListener('click', () => {
+    isOpen = !isOpen;
+    mobileMenu?.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+
+    if (isOpen) {
+      bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
+      bar2.style.opacity = '0';
+      bar3.style.transform = 'rotate(-45deg) translate(3px, -3px)';
+      bar3.style.width = '1.25rem';
+    } else {
+      bar1.style.transform = '';
+      bar2.style.opacity = '';
+      bar3.style.transform = '';
+      bar3.style.width = '';
+    }
+  });
+
+  // Close menu on link click
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      isOpen = false;
+      mobileMenu.classList.add('hidden');
+      menuBtn?.setAttribute('aria-expanded', 'false');
+      bar1.style.transform = '';
+      bar2.style.opacity = '';
+      bar3.style.transform = '';
+      bar3.style.width = '';
+    });
+  });
+</script>
